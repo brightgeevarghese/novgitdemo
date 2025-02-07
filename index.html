@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Global styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Container for the page */
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        /* Welcome text */
+        .welcome-text {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #e60023;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        /* Sub-text */
+        .sub-text {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.6;
+            max-width: 600px;
+        }
+
+        /* Button to interact */
+        .cta-button {
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            background-color: #e60023;
+            color: white;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #d1001a;
+        }
+
+        /* Footer with social media icons */
+        .footer {
+            position: fixed;
+            bottom: 20px;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer a:hover {
+            color: #e60023;
+        }
+
+        /* Pinterest-style images */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 50px;
+            max-width: 1200px;
+            width: 100%;
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Welcome message -->
+        <h1 class="welcome-text">Welcome to My Hello World Project</h1>
+        <p class="sub-text">Explore a collection of stunning visuals and be inspired. We believe in the power of design and creativity!</p>
+        
+        <!-- Call-to-action button -->
+        <button class="cta-button">Explore Now</button>
+
+        <!-- Image Gallery -->
+        <div class="image-gallery">
+            <img src="https://via.placeholder.com/500x500?text=Image+1" alt="Gallery Image 1">
+            <img src="https://via.placeholder.com/500x500?text=Image+2" alt="Gallery Image 2">
+            <img src="https://via.placeholder.com/500x500?text=Image+3" alt="Gallery Image 3">
+            <img src="https://via.placeholder.com/500x500?text=Image+4" alt="Gallery Image 4">
+            <img src="https://via.placeholder.com/500x500?text=Image+5" alt="Gallery Image 5">
+            <img src="https://via.placeholder.com/500x500?text=Image+6" alt="Gallery Image 6">
+        </div>
+    </div>
+
+    <!-- Footer with social media icons -->
+    <div class="footer">
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        <a href="https://www.twitter.com" target="_blank">Twitter</a>
+    </div>
+</body>
+</html>
